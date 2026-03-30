@@ -202,13 +202,14 @@ const StatusDot = ({ on = true, size = 7, color, pulse = false }) => (
   }} />
 );
 
-function Reveal({ children, delay = 0, y = 20 }) {
+function Reveal({ children, delay = 0, y = 20, style: extraStyle }) {
   const [ref, v] = useReveal();
   return (
     <div ref={ref} style={{
       opacity: v ? 1 : 0,
       transform: v ? "none" : `translateY(${y}px)`,
       transition: `opacity 0.65s cubic-bezier(.16,1,.3,1) ${delay}s, transform 0.65s cubic-bezier(.16,1,.3,1) ${delay}s`,
+      ...extraStyle,
     }}>{children}</div>
   );
 }
@@ -702,11 +703,11 @@ function Capabilities() {
           background: "var(--border)", borderRadius: 5, overflow: "hidden", marginTop: 20,
         }}>
           {modules.map((m, i) => (
-            <Reveal key={i} delay={i * 0.06}>
+            <Reveal key={i} delay={i * 0.06} style={{ display: "flex" }}>
               <div style={{
                 background: "var(--bg)", padding: "28px 24px",
                 transition: "background 0.2s",
-                cursor: "default",
+                cursor: "default", flex: 1,
               }}
                 className="cap-cell"
               >
