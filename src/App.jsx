@@ -496,7 +496,7 @@ function Hero() {
                   onMouseEnter={e => e.currentTarget.style.filter = "brightness(1.15)"}
                   onMouseLeave={e => e.currentTarget.style.filter = "brightness(1)"}
                 >VIEW PIPELINE <ArrowRight size={13} /></button>
-                <a href={PROFILE.resumeUrl} style={{
+                <a href={PROFILE.resumeUrl} download="Nav-Gill-Resume.pdf" target="_blank" rel="noopener noreferrer" style={{
                   display: "inline-flex", alignItems: "center", gap: 7,
                   padding: "10px 20px", borderRadius: 4, textDecoration: "none",
                   border: "1px solid var(--border)", color: "var(--fg3)",
