@@ -34,7 +34,7 @@ const PROFILE = {
   email: "buildwithnav@gmail.com",
   linkedin: "https://www.linkedin.com/in/navinder-gill/",
   github: "https://github.com/buildwithnav",
-  resumeUrl: "#",                                     // ← replace with PDF URL
+  resumeUrl: import.meta.env.BASE_URL + "resume.pdf",
   yearsExp: "9+",
   domain: "Healthcare · Clinical Data · Regulated Systems",
   location: "Los Angeles, CA",
