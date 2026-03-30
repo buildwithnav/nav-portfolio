@@ -678,8 +678,8 @@ function Capabilities() {
                 Quality is a system problem. I build the automation that solves it.
               </p>
             </div>
-            {/* Body paragraphs — full width, left-aligned */}
-            <div style={{ fontFamily: "var(--body)", fontSize: 16, lineHeight: 1.8, color: "var(--fg3)" }}>
+            {/* Body paragraphs — aligned with tagline */}
+            <div style={{ fontFamily: "var(--body)", fontSize: 16, lineHeight: 1.8, color: "var(--fg3)", paddingLeft: 136 }} className="about-body">
               <p style={{ marginBottom: 14 }}>
                 Over nine years, I've built test automation architectures across healthcare platforms,
                 clinical data pipelines, and regulated enterprise systems. My work sits at the intersection
@@ -1321,6 +1321,7 @@ export default function App() {
         @media (max-width: 860px) {
           .hero-g { grid-template-columns: 1fr !important; }
           .about-g { grid-template-columns: 1fr !important; }
+          .about-body { padding-left: 0 !important; }
           .conn-g { grid-template-columns: 1fr !important; }
           .kpi-g { grid-template-columns: 1fr 1fr !important; }
         }
