@@ -428,8 +428,8 @@ function Hero() {
 
   return (
     <section id="hero" style={{
-      minHeight: "100vh", display: "flex", alignItems: "center",
-      padding: "110px 28px 60px", position: "relative",
+      minHeight: "85vh", display: "flex", alignItems: "center",
+      padding: "80px 28px 40px", position: "relative",
     }}>
       <div style={{ maxWidth: 1140, margin: "0 auto", width: "100%" }}>
         <div className="hero-glow" />
