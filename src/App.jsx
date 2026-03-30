@@ -1084,8 +1084,8 @@ function Connect() {
         <Reveal><SectionRule id="connect" number="07" label="Connection" /></Reveal>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1, background: "var(--border)", borderRadius: 5, overflow: "hidden" }} className="conn-g">
-          <Reveal delay={0.08}>
-            <div style={{ background: "var(--bg)", padding: "32px 28px" }}>
+          <Reveal delay={0.08} style={{ display: "flex" }}>
+            <div style={{ background: "var(--bg)", padding: "32px 28px", flex: 1 }}>
               <span style={{ fontFamily: "var(--display)", fontSize: 22, fontWeight: 700, color: "var(--fg)", display: "block", marginBottom: 14, letterSpacing: "-0.02em" }}>
                 Let's talk quality engineering.
               </span>
@@ -1096,8 +1096,8 @@ function Connect() {
               </p>
             </div>
           </Reveal>
-          <Reveal delay={0.12}>
-            <div style={{ background: "var(--bg)", padding: "20px 28px" }}>
+          <Reveal delay={0.12} style={{ display: "flex" }}>
+            <div style={{ background: "var(--bg)", padding: "20px 28px", flex: 1 }}>
               {channels.map((ch, i) => (
                 <a key={i} href={ch.href} target={ch.label === "Email" ? undefined : "_blank"} rel="noopener noreferrer" style={{
                   display: "flex", alignItems: "center", justifyContent: "space-between",
