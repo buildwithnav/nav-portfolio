@@ -661,13 +661,13 @@ function Capabilities() {
   ];
 
   return (
-    <section style={{ padding: "80px 28px", position: "relative" }}>
+    <section style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="profile" number="01" label="System Profile" /></Reveal>
 
         {/* About block */}
         <Reveal delay={0.1}>
-          <div style={{ marginBottom: 64, paddingBottom: 48, borderBottom: "1px solid var(--border)" }}>
+          <div style={{ marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid var(--border)" }}>
             {/* Label + opening line */}
             <div style={{
               display: "grid", gridTemplateColumns: "120px 1fr", gap: 16,
@@ -734,7 +734,7 @@ function Capabilities() {
    ═══════════════════════════════════════════════════════════ */
 function Systems() {
   return (
-    <section style={{ padding: "80px 28px", position: "relative" }}>
+    <section style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="systems" number="03" label="Open Systems" /></Reveal>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -807,7 +807,7 @@ function Pipeline() {
   const [expanded, setExpanded] = useState("abbott");
 
   return (
-    <section style={{ padding: "80px 28px", position: "relative" }}>
+    <section style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="pipeline" number="04" label="Execution Pipeline" /></Reveal>
 
@@ -938,7 +938,7 @@ function Pipeline() {
    ═══════════════════════════════════════════════════════════ */
 function Registry() {
   return (
-    <section style={{ padding: "80px 28px", position: "relative" }}>
+    <section style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="registry" number="05" label="Dependency Registry" /></Reveal>
         <div style={{
@@ -1017,7 +1017,7 @@ function Output() {
   ];
 
   return (
-    <section ref={ref} style={{ padding: "80px 28px", position: "relative" }}>
+    <section ref={ref} style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="output" number="06" label="Performance Output" /></Reveal>
 
@@ -1079,7 +1079,7 @@ function Connect() {
   ];
 
   return (
-    <section style={{ padding: "80px 28px 48px", position: "relative" }}>
+    <section style={{ padding: "48px 28px", position: "relative" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto" }}>
         <Reveal><SectionRule id="connect" number="07" label="Connection" /></Reveal>
 
