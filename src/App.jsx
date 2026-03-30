@@ -506,22 +506,24 @@ function Hero() {
                   onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-h)"; e.currentTarget.style.color = "var(--fg)"; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--fg3)"; }}
                 ><Download size={13} /> RESUME</a>
-                <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" style={{
-                  display: "inline-flex", alignItems: "center", justifyContent: "center",
-                  width: 38, height: 38, borderRadius: 4, textDecoration: "none",
-                  border: "1px solid var(--border)", color: "var(--dim)", transition: "all 0.2s",
-                }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-h)"; e.currentTarget.style.color = "var(--fg)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--dim)"; }}
-                ><Github size={15} /></a>
-                <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" style={{
-                  display: "inline-flex", alignItems: "center", justifyContent: "center",
-                  width: 38, height: 38, borderRadius: 4, textDecoration: "none",
-                  border: "1px solid var(--border)", color: "var(--dim)", transition: "all 0.2s",
-                }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-h)"; e.currentTarget.style.color = "var(--fg)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--dim)"; }}
-                ><Linkedin size={15} /></a>
+                <div style={{ display: "flex", gap: 10 }}>
+                  <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" style={{
+                    display: "inline-flex", alignItems: "center", justifyContent: "center",
+                    width: 38, height: 38, borderRadius: 4, textDecoration: "none",
+                    border: "1px solid var(--border)", color: "var(--dim)", transition: "all 0.2s",
+                  }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-h)"; e.currentTarget.style.color = "var(--fg)"; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--dim)"; }}
+                  ><Github size={15} /></a>
+                  <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" style={{
+                    display: "inline-flex", alignItems: "center", justifyContent: "center",
+                    width: 38, height: 38, borderRadius: 4, textDecoration: "none",
+                    border: "1px solid var(--border)", color: "var(--dim)", transition: "all 0.2s",
+                  }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-h)"; e.currentTarget.style.color = "var(--fg)"; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--dim)"; }}
+                  ><Linkedin size={15} /></a>
+                </div>
               </div>
             </Reveal>
           </div>
