@@ -1,6 +1,8 @@
-# React + Vite
+# Nav Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional portfolio for Nav Gill — QA Automation Engineer & Platform Builder.
+
+Live at: https://buildwithnav.github.io/nav-portfolio/
 
 Currently, two official plugins are available:
 
