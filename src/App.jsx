@@ -23,7 +23,7 @@ const P = {
 const EXP = [
   { id:"abbott",org:"Abbott",title:"Software Development Engineer in Test (SDET)",loc:"Sylmar, CA",start:"Sep 2025",end:null,active:true,
     scope:"Test infrastructure, clinical data validation, and AI platform testing across regulated healthcare systems",
-    items:["Architected Unity2.0 — enterprise test automation platform (.NET 9, Playwright, xUnit, Oracle, Docker) with fluent API, RetryFact, HealthGate pre-flight checks, BDD via Reqnroll, ADO test case sync. Adopted by multiple teams as standard forkable foundation","Built DataSquad/Heimdall — SQL-first clinical data validation framework with externalized fixtures, Oracle DB connector, source-vs-target diff assertions, per-run artifact isolation (CSV exports, SQL snapshots), and Azure DevOps reporting via Unity.ADO","Tested AVA — 6-service AI orchestration platform (ava-api, ava-kb, ava-web, ava-orchestration-ui, ava-vectors, ava-loader). Playwright E2E across .NET, Angular, and Python services with MCP Streamable HTTP protocol","AI-assisted database validation — GitHub Copilot CLI + Oracle MCP for prompt-driven querying and dynamic verification","Shift-left testing on APIs, contracts, and schema mappings across 21 CFR Part 11 regulated environments"]},
+    items:["Architected enterprise test automation platform (.NET 9, Playwright, xUnit, Oracle, Docker) with modular multi-layer architecture (UI + API + Database). Fluent API, flaky-test retry mechanisms, pre-flight health checks, BDD via Reqnroll, ADO test case sync. Adopted by multiple teams as the standard forkable foundation","Built SQL-first clinical data validation framework — externalized fixtures, Oracle DB connector, parameterized async queries, source-vs-target diff assertions, per-run artifact isolation (CSV exports, SQL snapshots) for full audit traceability","Validated clinical data pipelines end-to-end — ingestion, transformation, schema integrity, and replication across 20+ Oracle tables with automated regression history tracking","Tested multi-service AI orchestration platform end-to-end with Playwright — .NET APIs, Angular UIs, Python retrieval services, vector search. Validated MCP protocol integration, runtime tool discovery, and multi-auth flows","AI-assisted database validation — GitHub Copilot CLI + Oracle MCP for prompt-driven querying and dynamic verification","Shift-left testing on APIs, contracts, and schema mappings across 21 CFR Part 11 regulated environments"]},
   { id:"rtd",org:"Reliable Tire Depot",title:"Software Development Engineer in Test",loc:"Santa Clarita, CA",start:"Apr 2024",end:"Aug 2025",active:false,
     scope:"Built QA function from zero — hiring, mentoring, framework, and process",
     items:["Cypress automation: UI, API, regression, and accessibility testing","85%+ automation coverage · 40% reduction in regression cycle time","GitHub Actions — matrix builds, fail-fast, smart retries","Postman, Newman, k6, Lighthouse CI","Shift-left with Jest and Pact · Xray + Jira traceability"]},
@@ -51,15 +51,9 @@ const SKILLS = [
 ];
 
 const PROJECTS = [
-  {name:"Unity2.0",repo:"",tag:"Enterprise test automation platform",
-    desc:"Modular multi-layer framework (.NET 9, C#, Playwright, xUnit, Oracle, Docker) teams clone and build on. Fluent API, RetryFact for flaky tests, HealthGate pre-flight checks, BDD via Reqnroll, ADO test case sync, and training curriculum for team adoption.",
-    tech:["C#",".NET 9","Playwright","xUnit","Oracle","Docker","Azure DevOps"],color:"#f59e0b"},
   {name:"DataSquad",repo:"https://github.com/buildwithnav/DataSquad",tag:"SQL-first clinical data validation",
-    desc:"Modular .NET 9 + xUnit framework with Oracle DB connector, externalized SQL fixtures (one statement per file), per-run artifact isolation (CSV exports, SQL snapshots), and Azure DevOps test result reporting via Unity.ADO integration. Source-vs-target diff assertions for clinical data pipelines.",
+    desc:"Modular .NET 9 + xUnit framework with Oracle DB connector, externalized SQL fixtures, per-run artifact isolation, and Azure DevOps reporting.",
     tech:["C#",".NET 9","xUnit","Oracle","Azure DevOps"],color:"#0ea5e9"},
-{name:"AVA",repo:"https://github.com/buildwithnav/AVA",tag:"AI orchestration platform (6 services)",
-    desc:"Full-stack AI platform: ava-api (.NET orchestration), ava-kb (Python retrieval), ava-web (Angular chat UI), ava-orchestration-ui (workflow builder), ava-vectors (vector search), ava-loader. MCP Streamable HTTP protocol with runtime tool discovery, Docker Compose deployment, Azure Pipelines CI/CD.",
-    tech:[".NET 9","Angular","Python","PostgreSQL","Docker","MCP"],color:"#10b981"},
   {name:"Cypress-E2E",repo:"https://github.com/buildwithnav/Cypress-E2E",tag:"Production-grade E2E automation",
     desc:"Full-stack Cypress framework with reusable commands, custom reporters, Slack notifications, and GitHub Actions matrix builds.",
     tech:["Cypress","JavaScript","GitHub Actions","Mochawesome"],color:"#8b5cf6"},
